@@ -1,7 +1,8 @@
-Project: Exoplanet Detection – NACA Hackathon
+Project: Hunting For Exoplanets – NASA Hackathon
 
 Goal:
-Detect confirmed exoplanets using Kepler datasets with a robust ML model.
+Develop a model that classifies signals and their features to determine whether they represent
+a confirmed planet, a candidate, or not.
 
 Dataset Details:
 
@@ -14,11 +15,12 @@ Data Challenges:
 Severe class imbalance
 Overfitting risk
 Missing values in some features
+
 Pipeline in the Notebook:
 Data Preprocessing
 Handle missing values (numerical & categorical)
 Label encoding for categorical features
-Resampling
+Resampling:
 SMOTE used to balance classes
 
 Model
