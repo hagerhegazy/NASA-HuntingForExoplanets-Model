@@ -50,7 +50,7 @@ numeric_columns.pkl	Names of numerical columns
 cat_columns.pkl	Names of categorical columns
 
 How to Use:
-Download the repository (inference file + 8 model files) and install required libraries
+Download the repository (inference file + 8 pkl files) and install required libraries
 Now u can use it and preprocess new data in Python.
 
 Future Work (Ideas):
