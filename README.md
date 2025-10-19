@@ -1,4 +1,4 @@
-Project: Hunting For Exoplanets – NASA Hackathon
+**Project: Hunting For Exoplanets – NASA Hackathon**
 
 Goal:
 Develop a model that classifies signals and their features to determine whether they represent
@@ -55,7 +55,3 @@ Now u can use it and preprocess new data in Python.
 
 Future Work (Ideas):
 Extend model to other datasets
-
-Experiment with deep learning approaches
-
-Improve deployment pipeline or integrate into a web app
