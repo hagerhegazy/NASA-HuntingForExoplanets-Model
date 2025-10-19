@@ -1,73 +1,71 @@
-🚀 Project: Hunting For Exoplanets – NASA Hackathon
-🎯 Goal
+# Project: **Hunting For Exoplanets – NASA Hackathon**
 
-Develop a model that classifies signals and their features to determine whether they represent
+## Goal
+Develop a model that classifies signals and their features to determine whether they represent  
 a confirmed planet, a candidate, or not.
 
-🪐 Dataset Details
-📊 Dataset Used
+---
 
-Evaluated 3 datasets; Dataset 3 was selected after addressing class imbalance and other issues.
+## Dataset Details
 
-Number of samples: 5979 (after cleaning)
+### Dataset used
+- Evaluated **3 datasets**; Dataset 3 was selected after addressing class imbalance and other issues.  
+- **Number of samples:** 5979 (after cleaning)  
+- **Number of features:** 116 (after cleaning)
 
-Number of features: 116 (after cleaning)
+### Data Challenges
+- Severe class imbalance  
+- Overfitting risk  
+- Missing values in some features
 
-⚠️ Data Challenges
+---
 
-Severe class imbalance
+## Pipeline in the Notebook
 
-Overfitting risk
+### Data Preprocessing
+- Handle missing values (numerical & categorical)  
+- Label encoding for categorical features  
+- **Resampling:** SMOTE used to balance classes  
 
-Missing values in some features
+### Model
+- LightGBM classifier with hyperparameter tuning  
+- Early stopping on validation set  
 
-🧩 Pipeline in the Notebook
-🔧 Data Preprocessing
+### Evaluation
+- **Train Accuracy:** 98%  
+- **Test Accuracy:** 95%  
+- Confusion matrix & classification report included  
 
-Handle missing values (numerical & categorical)
+---
 
-Label encoding for categorical features
+## Results Saved in Notebook
+- Trained LightGBM model  
+- Label encoder for target variable  
+- Preprocessing objects (imputers, encoders, feature columns)
 
-Resampling: SMOTE used to balance classes
+---
 
-🤖 Model
+## Saved Files (8 total)
 
-LightGBM classifier with hyperparameter tuning
+| **File** | **Description** |
+|-----------|-----------------|
+| exoplanet_model.pkl | Trained LightGBM model |
+| label_encoder.pkl | Target variable encoder |
+| feature_columns.pkl | List of feature columns |
+| feature_encoders.pkl | Encoders for categorical features |
+| imputer_numeric.pkl | Imputer for numerical features |
+| imputer_cat.pkl | Imputer for categorical features |
+| numeric_columns.pkl | Names of numerical columns |
+| cat_columns.pkl | Names of categorical columns |
 
-Early stopping on validation set
+---
 
-📈 Evaluation
+## How to Use
+1. Download the repository (**inference file + 8 pkl files**) and install required libraries.  
+2. Now you can use it and preprocess new data in Python.
 
-Train Accuracy: 98 %
+---
 
-Test Accuracy: 95 %
-
-Confusion matrix & classification report included
-
-💾 Results Saved in Notebook
-
-Trained LightGBM model
-
-Label encoder for target variable
-
-Preprocessing objects (imputers, encoders, feature columns)
-
-📁 Saved Files (8 total)
-File	Description
-exoplanet_model.pkl	Trained LightGBM model
-label_encoder.pkl	Target variable encoder
-feature_columns.pkl	List of feature columns
-feature_encoders.pkl	Encoders for categorical features
-imputer_numeric.pkl	Imputer for numerical features
-imputer_cat.pkl	Imputer for categorical features
-numeric_columns.pkl	Names of numerical columns
-cat_columns.pkl	Names of categorical columns
-⚙️ How to Use
-
-Download the repository (inference file + 8 pkl files) and install required libraries.
-
-Now you can use it and preprocess new data in Python.
-
-🔮 Future Work (Ideas)
-
-Extend model to other datasets
+## Future Work (Ideas)
+- Extend model to other datasets  
+- Add online learning. 
